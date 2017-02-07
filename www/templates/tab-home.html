@@ -1,0 +1,21 @@
+<ion-view view-title="Oportunidades de Negocio">
+  <ion-content>
+	<div class="home-content">
+		<a class="item-home"  ng-repeat="item in home.items" href="#/tab/home/{{item.id}}">
+			<img class="item-home-avatar" ng-src="http://lorempixel.com/300/300">
+			<div class="text">
+				<div class="title">
+					<h2 ng-bind="item.title"></h2>
+				</div> 
+				<p ng-bind="item.date"></p>
+			</div>
+			<div class="icon-home">
+				<i class="icon ion-chevron-right icon-accessory"></i>
+			</div>
+
+		</div>
+		
+	</div>
+	      
+  </ion-content>
+</ion-view>
