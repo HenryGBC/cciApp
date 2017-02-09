@@ -35,7 +35,58 @@
 	          templateUrl: 'templates/item-detail.html'
 	        }
 	      }
-   	 });
+   	 })
+	 .state('tab.chats', {
+      url: '/chats',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/tab-chats.html',
+          controller: 'ChatsCtrl',
+          controllerAs: 'chats'
+        }
+      }
+    })
+    .state('tab.chat-detail', {
+      url: '/chats/:chatId',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/chat-detail.html',
+          controller: 'ChatDetailCtrl',
+          controllerAs: 'chat'
+        }
+      }
+    })
+    .state('tab.profile', {
+      url: '/profile',
+      views: {
+        'tab-profile': {
+          templateUrl: 'templates/tab-profile.html',
+          controller: 'ProfileCtrl',
+          controllerAs: 'pr'
+        }
+      }
+    })
+    .state('tab.add', {
+      url: '/add',
+      views: {
+        'tab-add': {
+          templateUrl: 'templates/tab-add.html',
+          controller: 'AddCtrl',
+          controllerAs: 'add'
+        }
+      }
+    })
+    .state('tab.search', {
+      url: '/search',
+      views: {
+        'tab-search': {
+          templateUrl: 'templates/tab-search.html',
+          controller: 'SearchCtrl',
+          controllerAs: 'sr'
+        }
+      }
+    });
+
 
 // setup an abstract state for the tabs directive
     

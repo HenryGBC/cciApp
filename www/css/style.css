@@ -82,6 +82,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	cursor: pointer;
+	margin: 10px 10px;
 
 }
 .home-content .item-home img{
@@ -136,7 +137,7 @@
 }
 .detail-content img{
     width: 100%;
-    height: 150px;
+    height: 250px;
 }
 .detail-content h2{
 	text-align: center;
@@ -146,6 +147,10 @@
 }
 .detail-content .text{
 	border-bottom: 1px solid #C1C1C1;
+	padding: 20px;
+}
+.detail-content .text p{
+	margin-top: 14px;
 }
 .detail-content .contact{
 	padding: 2em 1.5em;
@@ -204,4 +209,105 @@ ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-
     height: 32px;
     font-size: 32px;
     margin-top: 5px;
+}
+
+//chats
+.chats .profile-chat{
+
+}
+.profile-chat{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+// chat detail
+.messages{
+}
+.messages{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 60px;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.messages .message{
+	background: rgb(245, 245, 245);
+	width: 70%;
+	padding: 20px;
+	color: #636363;
+	font-size: 1.2em;
+	margin-bottom: 15px;
+	border: 1px solid;
+}
+.messages .own-message{
+	width: 70%;
+	padding: 20px;
+	margin: 0 0 0 auto;
+	color: #636363;
+	font-size: 1.2em;
+	margin-bottom: 15px;
+	border: 1px solid;
+}
+
+.input-message{
+	    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+//Tab profile
+
+
+.profile-content{
+
+}
+
+.profile-content .avatar {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.profile-content .avatar img {
+	 border-radius: 50%;
+}
+.profile-content .name{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 1em;
+}
+.profile-content .name h2{
+    font-size: 18px;
+    font-weight: 600;
+    color: #7D7D7D;
+}
+
+.profile-content .tabs-profile{
+	top: 130px;
+}
+.profile-content .items-content{
+	max-height: 455px;
+	overflow-y: auto;
+	padding: 65px 10px 10px 10px;
+}
+.profile-content .items-content .item-home{
+	 margin: 10px 0px;
+}
+
+
+
+//add publish
+
+.add-content{
+}
+.add-content{
+	padding: 10px;
+}
+.add-content .item-input{
+	margin-bottom: 10px;
 }

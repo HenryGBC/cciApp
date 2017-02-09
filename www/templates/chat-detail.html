@@ -4,11 +4,46 @@
   The FriendsCtrl pulls data from the Friends service (service.js)
   The Friends service returns an array of friend data
 -->
-<ion-view view-title="{{chat.name}}">
+<ion-view view-title="{{chat.chat.name}}">
+  <ion-nav-buttons side="primary">
+    <img ng-src="{{chat.chat.face}}" class="profile-chat" >
+  </ion-nav-buttons>
   <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
+    <div class="messages">
+      <div class="message">
+        <p>Que tal Henry todo bien como está todo</p>
+      </div>
+      <div class="own-message">
+        <p>Todo bien Max.. aquí trabajando</p>
+      </div>
+      <div class="message">
+        <p>Que tal Henry todo bien como está todo</p>
+      </div>
+      <div class="own-message">
+        <p>Todo bien Max.. aquí trabajando</p>
+      </div>
+      <div class="own-message">
+        <p>Todo bien Max.. aquí trabajando</p>
+      </div><div class="own-message">
+        <p>Todo bien Max.. aquí trabajando</p>
+      </div>
+       <div class="message">
+        <p>Que tal Henry todo bien como está todo</p>
+      </div> <div class="message">
+        <p>Que tal Henry todo bien como está todo</p>
+      </div>
+       <div class="message">
+        <p>Que tal Henry todo bien como está todo</p>
+      </div>
+    </div>
+    <div class="item item-input-inset input-message">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="Email">
+      </label>
+      <button class="button button-small">
+        Submit
+      </button>
+    </div>
+
   </ion-content>
 </ion-view>

@@ -1,0 +1,41 @@
+<ion-view view-title="Mi Perfil">
+  <ion-content>
+    <div class="profile-content">
+    	<div class="avatar">
+    		<img  class="full-image" ng-src="http://lorempixel.com/300/300" alt="">
+    	</div>
+    	<div class="name">
+    		<h2>Francisco Hernandez</h2>
+    	</div>
+    	<div class="tabs tabs-profile">
+		  <a class="tab-item" ng-class="{'activated': pr.tabs.publish }">
+		    Mis Publicaciones
+		  </a>
+		  <a class="tab-item">
+		    Proyectos Asociados
+		  </a>
+		  <a class="tab-item">
+		    Favoritos
+		  </a>
+		</div>
+ 		<div class="home-content items-content">
+			<a class="card item-home "  ng-repeat="item in pr.items" href="#/tab/home/{{item.id}}">
+				<img class="item-home-avatar" ng-src="http://lorempixel.com/300/300">
+				<div class="text">
+						<div class="title">
+							<h2 ng-bind="item.title"></h2>
+						</div> 
+						<p ng-bind="item.date"></p>
+					</div>
+					<div class="icon-home">
+						<i class="icon ion-chevron-right icon-accessory"></i>
+					</div>
+
+				</div>
+			</a>
+		</div>
+		
+    </div>
+   
+  </ion-content>
+</ion-view>
